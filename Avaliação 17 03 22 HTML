@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Calculadora</title>
+</head>
+<body>
+    <h2>Avaliação Calculadora Augusto</h2>
+    <input id="primeiro" placeholder="Digite o valor de X" type="number">
+    <br>
+    <input id="segundo" placeholder="Digite o valor de Y" type="number">
+    <br>
+    <input id="resultado" placeholder="Resultado" readonly>
+
+    <button type="button" onclick="somar()">+</button>
+    <button type="button" onclick="subtrair()">-</button>
+    <button type="button" onclick="dividir()">/</button>
+    <button type="button" onclick="multiplicar()">*</button>
+    <button type="button" onclick="potenciacao()">**</button>
+    <button type="button" onclick="raizquadrada()">√</button>
+    <button type="button" onclick="resto()">%</button>
+    <button type="button" onclick="limparinputs()">Restaurar</button>
+
+    <script>
+
+    const somar = function (){
+        let b1 = document.getElementById('primeiro').value
+        let b2 = document.getElementById('segundo').value
+        resultado = parseFloat(b1) + parseFloat(b2)
+        document.getElementById('resultado').value = resultado
+    }
+
+        const subtrair = function (){
+        let b1 = document.getElementById('primeiro').value
+        let b2 = document.getElementById('segundo').value
+        resultado = parseInt(b1) - parseInt(b2)
+        document.getElementById('resultado').value = resultado
+    }
+
+        const multiplicar = function (){
+        let b1 = document.getElementById('primeiro').value
+        let b2 = document.getElementById('segundo').value
+        resultado = parseInt(b1) * parseInt(b2)
+        document.getElementById('resultado').value = resultado
+    }
+
+        const dividir = function (){
+        let b1 = document.getElementById('primeiro').value
+        let b2 = document.getElementById('segundo').value
+        resultado = parseInt(b1) / parseInt(b2)
+        document.getElementById('resultado').value = resultado    
+    }
+
+        const potenciacao = function (){
+        let b1 = document.getElementById('primeiro').value
+        let b2 = document.getElementById('segundo').value
+        resultado = parseInt(b1) ** parseInt(b2)
+        document.getElementById('resultado').value = resultado 
+    }
+        const raizquadrada = function(){
+             let x = document.getElementById('primeiro').value
+             let y = document.getElementById('segundo').value
+             z = Math.sqrt(parseInt(x))
+             document.getElementById('resultado').value = z
+             console.log(z)
+    }
+
+        const resto = function(){
+             let x = document.getElementById('primeiro').value
+             let y = document.getElementById('segundo').value
+             z = parseInt(x) % parseInt(y)
+             document.getElementById('resultado').value = z
+             console.log(z)
+    }
+
+        const limparinputs = function(){
+             document.getElementById('primeiro').value = ""
+             document.getElementById('segundo').value = ""
+             document.getElementById('resultado').value = ""
+    }
+    </script>
+</body>
+</html>
