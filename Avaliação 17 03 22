@@ -1,0 +1,35 @@
+let nome1 = "Augusto Saravia Tavares";
+let nome2 = "Bruno Ricardo Wotzke";
+let nome3 = "Pedro Henrique Flores da Rocha";
+let nome4 = "Alexis Reales Basilio";
+let nome5 = "Isaque Muniz Guedes";
+
+let a1 = 5
+let a2 = 4
+let a3 = 3
+let a4 = 2
+let a5 = 1
+
+console.log(a1, a2, a3, a4, a5)
+
+let a6 = true;
+let a7 = false;
+let a8 = false;
+let a9 = false;
+let a10 = true;
+
+console.log(a6, a7, a8, a9, a10)
+
+let a11 = 6969.69
+let a12 = 789.14
+let a13 = 1405.93
+let a14 = 11678.32
+let a15 = 6351.71
+
+console.log(a11, a12, a13, a14, a15)
+
+const a16 = 1
+const bool = true
+const float = 1.5
+const string = "maionese"
+const a17 = 2
